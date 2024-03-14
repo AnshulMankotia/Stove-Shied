@@ -1,0 +1,287 @@
+// Global variables
+$primary_bg_clr: #d9d9d9;
+$secondary_bg_clr: #f7f7f7;
+$heading_clr: #000000;
+$yellow_clr: #efe33b;
+$black_clr:#000000;
+$btn_primary_clr: #efe33b;
+$btn_hover_clr: #efe33b80;
+$grey_clr: #6f6e6d;
+$border_clr: #00000033;
+$border_yellow_clr: #efe33b80;
+$primary_border_radius: 20px;
+$secondary_border_radius: 30px;
+$primary_green_clr: #219653;
+$border_green_clr: #219653;
+$section_spacer:5rem 0rem;
+$section_spacer:5rem 0rem;
+$section_spacer_2:10rem 0rem;
+$section_spacer_3:10rem 0rem 5rem 0;
+$section_spacer_4:5rem 0rem 10rem 10;
+
+.hero_section{
+    background-image: url("/assets/home_hero_bg.png");
+    min-height: 84.4vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    .wrapper{
+        width: 573px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 2rem;
+        h1,span{
+            color: white;
+        }
+        >span{
+            font-size: 1.25rem;
+        }
+        .input_container{
+            width: 100%;
+            position: relative;
+            input{
+                width: 100%;
+                border: 1px solid #83847F;
+                border-radius: 10px;
+                padding: 1rem 5rem;
+                font-size: 1rem;
+            }
+        }
+    
+        .video_popup{
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+.hero_section .wrapper .input_container::before {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z' stroke='%23131A29' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+// Home Page Section-2 CSS----------------------
+.homepage_section2 .wrapper{
+    align-items: center;
+    justify-content: center;
+    padding: $section_spacer;
+    .column:nth-of-type(1){
+       text-align: center;
+       max-width: 1290px;
+       margin-bottom: 3rem;
+       h1{
+        margin-bottom: 1rem;
+       }
+       p{
+        font-size: 1.25rem;
+       }
+    }
+}
+
+.homepage_section2 .wrapper{
+    .column:nth-of-type(2){
+        justify-content: space-between;
+        gap: 2rem;
+        .info_box{
+            width: 24%;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            p{
+                font-size: 1.25rem;
+            }
+            h3{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// Home Page Section-3 CSS----------------------
+.homepage_section3 .wrapper{
+    padding: $section_spacer;
+    gap: 6rem;
+    h1{
+        text-align: center;
+    }
+    .column:nth-of-type(1) {
+         gap: 5rem;
+        .inner_column{
+            justify-content: space-between;
+        }
+        a{
+            width: 15%;
+            cursor: pointer;
+        }
+    }
+}
+.homepage_section3 .wrapper .column:nth-of-type(2){
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    >span{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+
+
+// Home Page Section-4 CSS----------------------
+.homepage_section4 .wrapper{
+    padding: $section_spacer_4;
+    gap: 5rem;
+    h1{
+        text-align: center;
+    }
+}
+
+
+
+// Home Page Section-5 CSS----------------------
+.homepage_section5{
+    background-color: #FFFFFF;
+    .wrapper{
+        padding: $section_spacer_2;
+        gap: 5rem;
+        .column:nth-of-type(1){
+            align-items: center;
+            justify-content: center;
+            .inner_column{
+                max-width: 921px;
+                text-align: center;
+                p{
+                    font-size: 1.25rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+.homepage_section5 .wrapper .column:nth-of-type(2){
+    justify-content: space-between;
+    align-items: baseline;
+    .inner_column{
+        max-width: 568px;
+        align-items: center;
+        .product_img{
+            max-width:354px ;
+        }
+    }
+    
+}
+.homepage_section5 .wrapper .column:nth-of-type(2){
+    .product_description{
+        h2{
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        ul{
+            gap: 2rem; 
+
+            li:last-child{
+                margin-top: 1rem;
+            }
+ 
+            li{
+             display: flex;
+             gap: 2rem;
+             span{
+             font-size: 1.5rem;
+             font-weight: 500;
+             flex: 1;
+             }
+         }
+         }
+    }
+}
+
+
+// Home Page Section-6 CSS----------------------
+
+.homepage_section6{
+    padding: $section_spacer_3;
+}
+
+
+// Home Page Section-7 CSS Review Section----------------------
+.homepage_section7 .wrapper{
+    padding: $section_spacer;
+    .column:nth-of-type(1){
+        align-items: center;
+        justify-content: center;
+        .inner_column{
+            max-width: 920px;
+            text-align: center;
+        }
+    }
+}
+.homepage_section7 .wrapper{
+    padding: $section_spacer;
+    .column:nth-of-type(2){
+        p{
+            text-align: center;
+             font-size: 1.25rem;
+             color: white;
+             background-color: red;
+             margin-top: 2rem;
+             padding: 1rem;
+        }
+}
+}
+
+
+
+// Home Page Section-8 CSS-Best Sellers---------------------
+.homepage_section8 .wrapper{
+    padding: $section_spacer;
+    gap: 5rem;
+    .column:nth-of-type(1){
+       justify-content: center;      
+        h1{
+            text-align: center;
+            max-width:1040px;
+        }
+    }
+}
+.homepage_section8 .wrapper{
+    .column:nth-of-type(2){
+       grid-template-columns: repeat(4,1fr);
+       column-gap: 2rem;
+    }
+}
+
+
+// Home Page Section-9 CSS Gift Card section---------------------
+.homepage_section9{
+   background-color: $black_clr;
+ .wrapper{
+    padding: $section_spacer;
+    align-items: center;
+    justify-content: center;
+    .column{
+        max-width: 841px;
+        align-items: center;
+        justify-content: center;
+        gap:3rem;
+        h1{
+            color: $yellow_clr;
+            text-align: center;
+        }
+        h3{
+            color: white;
+        }
+    }
+}
+}

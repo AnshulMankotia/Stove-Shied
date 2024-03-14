@@ -21,6 +21,7 @@ $primary_border_radius: 20px;
 $secondary_border_radius: 30px;
 $primary_green_clr: #219653;
 $border_green_clr: #219653;
+$section_spacer:5rem 0rem;
 
 //Global css
 body {
@@ -103,35 +104,10 @@ h4 {
     max-width: 1560px;
     margin-inline: auto;
 }
-
-// global button css
-.global_btn {
-    font-size: 1rem;
-    font-weight: 500;
-    color: $heading_clr;
-    background-color: $btn_primary_clr;
-    border-radius: 10px;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
-    transition: background-color 0.2s ease-in-out;
+.container_1500 {
+    max-width: 1500px;
+    margin-inline: auto;
 }
-
-.global_btn .btn_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-.global_btn .btn_wrapper span{
-    font-weight: 500;
-}
-.global_btn:hover {
-    background-color: $btn_hover_clr;
-}
-
-// global button css ends
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -163,6 +139,74 @@ h4 {
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .container_1500 {
+        padding: 0 2rem;
+    }
+}
+
+// Global components css starts---------------------------
+// 1) global button css
+.global_btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $heading_clr;
+    background-color: $btn_primary_clr;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.global_btn .btn_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.global_btn .btn_wrapper span{
+    font-weight: 500;
+}
+.global_btn:hover {
+    background-color: $btn_hover_clr;
+}
+
+
+// 2) Product Loop css starts
+
+.product_loop{
+    min-height: 690px;
+    max-width: 425px;
+    border: 1px solid #0000004D;
+    border-radius: $primary_border_radius;
+    color: #000000;
+    gap: 1.25rem;
+    padding: 1rem 2rem;
+    .product_meta{
+     gap: 1rem;
+     .inner_column{
+        border: 1px solid $black_clr;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        span,strong{
+            font-size: 1rem;
+        }
+     }
+    }
+}
+
+.product_loop .product_details{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    .price{
+        font-size: 1.25rem;
+        color: $grey_clr;
+    }
+}
 
 
 // Header Css Starts-------------------
@@ -214,7 +258,14 @@ header .main_row_header .wrapper{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 2rem;
+        }
+        li a{
+           padding: 35px 0px; 
+           color: $black_clr;
+           transition: color 0.2s ease-in-out;
+        }
+        li:hover a{
+            color: $grey_clr;
         }
     }
 }

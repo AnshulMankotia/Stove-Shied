@@ -88,6 +88,40 @@ h4 {
   margin-inline: auto;
 }
 
+.container_1500 {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1760px) {
+  .container_1760 {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1560px) {
+  .container_1560 {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container_1500 {
+    padding: 0 2rem;
+  }
+}
 .global_btn {
   font-size: 1rem;
   font-weight: 500;
@@ -116,30 +150,38 @@ h4 {
   background-color: rgba(239, 227, 59, 0.5019607843);
 }
 
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-  }
-  h3 {
-    font-size: 1.125rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
+.product_loop {
+  min-height: 690px;
+  max-width: 425px;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  border-radius: 20px;
+  color: #000000;
+  gap: 1.25rem;
+  padding: 1rem 2rem;
 }
-@media screen and (max-width: 1760px) {
-  .container_1760 {
-    padding: 0 2rem;
-  }
+.product_loop .product_meta {
+  gap: 1rem;
 }
-@media screen and (max-width: 1560px) {
-  .container_1560 {
-    padding: 0 2rem;
-  }
+.product_loop .product_meta .inner_column {
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
+.product_loop .product_meta .inner_column span, .product_loop .product_meta .inner_column strong {
+  font-size: 1rem;
+}
+
+.product_loop .product_details {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+.product_loop .product_details .price {
+  font-size: 1.25rem;
+  color: #6f6e6d;
+}
+
 header .top_row_header {
   background-color: #000000;
   padding: 1rem 2rem;
@@ -181,7 +223,14 @@ header .main_row_header .wrapper .column:nth-of-type(2) ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+}
+header .main_row_header .wrapper .column:nth-of-type(2) li a {
+  padding: 35px 0px;
+  color: #000000;
+  transition: color 0.2s ease-in-out;
+}
+header .main_row_header .wrapper .column:nth-of-type(2) li:hover a {
+  color: #6f6e6d;
 }
 
 header .main_row_header .wrapper .column:nth-of-type(3) {
