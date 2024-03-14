@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Global variables
+$primary_bg_clr: #d9d9d9;
+$secondary_bg_clr: #f7f7f7;
+$heading_clr: #000000;
+$yellow_clr: #efe33b;
+$black_clr:#000000;
+$btn_primary_clr: #efe33b;
+$btn_hover_clr: #efe33b80;
+$grey_clr: #6f6e6d;
+$border_clr: #00000033;
+$border_yellow_clr: #efe33b80;
+$primary_border_radius: 20px;
+$secondary_border_radius: 30px;
+$primary_green_clr: #219653;
+$border_green_clr: #219653;
+
+//Global css
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: $secondary_bg_clr;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+picture {
+    width: 100%;
+}
+
+span,
+a,
+li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading_clr;
+}
+
+p {
+    color: $grey_clr;
+    font-weight: 400;
+}
+span,
+a {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3rem; //main_heading (48px)
+}
+
+h2 {
+    font-size: 2rem; //sub_main-heading_1 (32px)
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem; //sub_main-heading_2 (24px)
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem; //sub_main-heading_3 (20px)
+    font-weight: 500;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_row {
+    display: grid;
+}
+
+.container_1760 {
+    max-width: 1760px;
+    margin-inline: auto;
+}
+
+.container_1560 {
+    max-width: 1560px;
+    margin-inline: auto;
+}
+
+// global button css
+.global_btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $heading_clr;
+    background-color: $btn_primary_clr;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.global_btn .btn_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.global_btn .btn_wrapper span{
+    font-weight: 500;
+}
+.global_btn:hover {
+    background-color: $btn_hover_clr;
+}
+
+// global button css ends
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; //main_heading (24px)
+    }
+
+    h2 {
+        font-size: 1.25rem; //sub_main-heading_1 (20px)
+    }
+
+    h3 {
+        font-size: 1.125rem; //sub_main-heading_2 (18px)
+    }
+
+    h4 {
+        font-size: 1rem; //sub_main-heading_3 (16px)
+    }
+}
+
+@media screen and (max-width: 1760px) {
+    .container_1760 {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .container_1560 {
+        padding: 0 2rem;
+    }
+}
+
+
+
+// Header Css Starts-------------------
+
+//-------------- Top Row
+
+header .top_row_header{
+    background-color: $black_clr;
+    padding: 1rem 2rem;
+
+   span{
+        color: white;
+        font-size: 0.875rem;
+    
+    }
+    .wrapper{
+        max-width: 1196px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .column{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+
+//--------------- Main Row
+header .main_row_header{
+ box-shadow: 0px 1px 1px 0px #0000000D;
+}
+header .main_row_header .wrapper{
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    justify-content: space-between;
+
+    .column:nth-of-type(1){
+        width: 11%;
+    }
+
+    .column:nth-of-type(2){
+        width:35%;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+    }
+}
+
+
+
+header .main_row_header .wrapper .column:nth-of-type(3){
+    width:480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .inner_col_1{
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inner_col_1 a{
+        background-color: #FFFDE6;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+}
+
+// Header Css Ends-----------------------
