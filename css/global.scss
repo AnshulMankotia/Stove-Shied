@@ -32,7 +32,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+main{
+    margin-top: 8.875rem;
+}
 img,
 picture {
     width: 100%;
@@ -209,10 +211,52 @@ h4 {
 }
 
 
+// 3) Post Archive loop css
+.post_archive_loop{
+   max-width: 573px; 
+   border-radius: $primary_border_radius;
+   border: 1px solid $border_clr;
+   .featured_image{
+    height:356px ;
+    flex: 1;
+   }
+   .post_short_meta_desp{
+    padding:2rem 2.5rem;
+    flex: 1;
+    gap: 1rem;
+    align-items: flex-start;
+    h3{
+        font-weight: 600;
+    }
+    .post_date{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        span{
+            font-size: 1.25rem;
+            color: $grey_clr;
+        }
+    }
+    p{
+        font-size: 1.25rem;
+    }
+   }
+}
+
+
+
+
 // Header Css Starts-------------------
 
 //-------------- Top Row
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 9999;
+}
 header .top_row_header{
     background-color: $black_clr;
     padding: 1rem 2rem;
@@ -293,3 +337,6 @@ header .main_row_header .wrapper .column:nth-of-type(3){
 }
 
 // Header Css Ends-----------------------
+
+
+// Footer Css Starts

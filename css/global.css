@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  margin-top: 8.875rem;
+}
+
 img,
 picture {
   width: 100%;
@@ -180,6 +184,46 @@ h4 {
 .product_loop .product_details .price {
   font-size: 1.25rem;
   color: #6f6e6d;
+}
+
+.post_archive_loop {
+  max-width: 573px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.post_archive_loop .featured_image {
+  height: 356px;
+  flex: 1;
+}
+.post_archive_loop .post_short_meta_desp {
+  padding: 2rem 2.5rem;
+  flex: 1;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.post_archive_loop .post_short_meta_desp h3 {
+  font-weight: 600;
+}
+.post_archive_loop .post_short_meta_desp .post_date {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.post_archive_loop .post_short_meta_desp .post_date span {
+  font-size: 1.25rem;
+  color: #6f6e6d;
+}
+.post_archive_loop .post_short_meta_desp p {
+  font-size: 1.25rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 9999;
 }
 
 header .top_row_header {
