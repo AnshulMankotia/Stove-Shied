@@ -55,7 +55,7 @@
            </div>
            <div class="column">
             <div class="inner_col_1">
-                <a href="">
+                <a class="serach_icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#131A29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -85,6 +85,21 @@
             </div>
            </div>
         </div>
+    </div>
+
+    <div id="search_modal">
+     <div class="ajax_search">
+        <input type="search" name="" id="" placeholder="Search for your stove model number">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="25" fill="#EFE33B"/>
+            <path d="M29.6725 29.6412L34 34M32 24C32 28.4183 28.4183 32 24 32C19.5817 32 16 28.4183 16 24C16 19.5817 19.5817 16 24 16C28.4183 16 32 19.5817 32 24Z" stroke="#131A29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+     </div>
+     <span class="close_icon" title="Close" style="cursor: pointer;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M18 6L6 18" stroke="#131A29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                  
+     </span>
     </div>
     </header>
     <main>
@@ -493,7 +508,7 @@
      </section>
 
      <!---------- Section-9 Home Page -------------------->
-     <section class="homepage_section9 gift_card_section">
+     <section class="global_gift_card_template">
      <div class="wrapper flex_column">
         <div class="column flex_column">
          <h1>Give the Gift of Stove Shield with Our Gift Cards</h1>
@@ -512,7 +527,7 @@
      </section>
 
      <!---------- Section-10 Home Page -------------------->
-     <section class="homepage_section10">
+     <section class="global_find_store_template">
         <div class="container_1760">
             <div class="wrapper flex_column">
                 <h1>Find your Stove Shield Stove Top Protector</h1>
@@ -549,7 +564,7 @@
      </section>
 
      <!---------- Section-12 Home Page -------------------->
-     <section class="homepage_section12 blogs">
+     <section class="global_blogs_archive_loop_template">
         <div class="container_1760">
             <div class="wrapper flex_column">
                 <div class="column flex_column">
@@ -636,7 +651,7 @@
      </section>
 
      <!---------- Section-13 Home Page -------------------->
-     <section class="homepage_section13 contact_form">
+     <section class="global_findModal_contact_form_template">
         <div class="wrapper flex_row">
             <div class="column flex_column">
                 <div class="inner_col_1 flex_column">
@@ -676,7 +691,7 @@
                 <div class="logo">
                     <a href=""><img src="/assets/logo.svg" alt=""></a>
                 </div>
-                <p>Stove Shield is a family owned business focused on bringing innovative products that protect the most important appliance in your kitchen – your stove! We put cases on our phones, its time we start treating our stove with the same type of love. <strong>Read our story</strong></p>
+                <p>Stove Shield is a family owned business focused on bringing innovative products that protect the most important appliance in your kitchen – your stove! We put cases on our phones, its time we start treating our stove with the same type of love. <a href=""><strong>Read our story</strong></a></p>
                 <h3>Accepted Payment Methods</h3>
                 <div class="payment_icons">
                     <svg width="77" height="46" viewBox="0 0 77 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -866,5 +881,9 @@
         </div>
      </div>
     </footer>
+
+    <div class="overlay"></div>
+    <script src="/js/global.js"></script>
+    
   </body>
 </html>

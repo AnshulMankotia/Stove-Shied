@@ -1,0 +1,25 @@
+// Global variables
+$primary_bg_clr: #d9d9d9;
+$secondary_bg_clr: #f7f7f7;
+$heading_clr: #000000;
+$yellow_clr: #efe33b;
+$black_clr: #000000;
+$btn_primary_clr: #efe33b;
+$btn_hover_clr: #efe33b80;
+$grey_clr: #6f6e6d;
+$border_clr: #00000033;
+$border_yellow_clr: #efe33b80;
+$primary_border_radius: 20px;
+$secondary_border_radius: 30px;
+$primary_green_clr: #219653;
+$border_green_clr: #219653;
+$section_spacer: 5rem 0rem;
+$section_spacer_2: 10rem 0rem;
+$section_spacer_3: 10rem 0rem 5rem 0;
+$section_spacer_4: 5rem 0rem 10rem 0;
+
+.login_form {
+    .column:nth-of-type(1) {
+      background-image: url("/assets/loginsection.png");
+    }
+}
