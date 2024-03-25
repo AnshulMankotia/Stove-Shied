@@ -525,6 +525,58 @@ h4 {
     display: block;
 }
 
+
+
+
+// 10) Global FAQ Section CSS-------------------
+.global_faq{
+    background-color: #FFFFFF;
+    .wrapper{
+        padding: $section_spacer_2;
+        gap: 5rem;
+        .column:nth-of-type(1){
+            align-items: center;
+            text-align: center;
+            h1{
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+        }
+        
+    }
+}
+
+
+.global_faq .column:nth-of-type(2){
+    max-width: 1386px;
+    .accordion{
+        gap: 1rem;
+        .tab{
+            padding: 1.5rem 2rem;
+            border: 1px solid $border_clr;
+            border-radius: 10px;
+            .tab_title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .content{
+                padding: 1.5rem 0;
+                p{
+                    font-size: 1.25rem;
+                    line-height: 2em;
+                }
+            }
+            .content.open{
+                display: none;
+            }
+        }
+    }
+}
+
+
 // Header Css Starts-------------------
 
 //-------------- Top Row
@@ -565,6 +617,11 @@ header .top_row_header {
 
 
 //--------------- Main Row
+header{
+    .mobile_header{
+        display: none;
+    }
+}
 header .main_row_header {
     box-shadow: 0px 1px 1px 0px #0000000D;
 }
@@ -758,87 +815,9 @@ footer .l_content{
     }
 }
 
-@media screen and (max-width: 480px) {
-    main {
-        margin-top: 6.875rem;
-    }
 
-    .global_btn .btn_wrapper span {
-        font-size: 0.75rem;
-    }
 
-    header .top_row_header span {
-        font-size: 0.5rem !important;
-    }
-
-    h1 {
-        font-size: 1.5rem; //main_heading (24px)
-    }
-
-    h2 {
-        font-size: 1.25rem; //sub_main-heading_1 (20px)
-    }
-
-    h3 {
-        font-size: 1.125rem; //sub_main-heading_2 (18px)
-    }
-
-    h4 {
-        font-size: 1rem; //sub_main-heading_3 (16px)
-    }
-
-    .global_gift_card_template .wrapper .column {
-        gap: 2rem;
-        padding: 0 3rem;
-    }
- .global_find_store_template {
-        padding: 5rem 1rem;
-
-        .container_1760 .wrapper p {
-            font-size: .75rem;
-        }
-    }
-
- .global_blogs_archive_loop_template .wrapper {
-        padding: 7rem 0rem;
-        gap: 5rem;
-    }
-
-    .global_blogs_archive_loop_template .wrapper .column:nth-of-type(2) {
-        flex-direction: column;
-
-        .post_archive_loop .post_short_meta_desp p {
-            font-size: 1rem;
-        }
-
-        .post_date span {
-            font-size: 1rem;
-        }
-    }
-.global_findModal_contact_form_template {
-        padding: 0 2rem;
-
-        .wrapper {
-            .column .inner_col_2 form {
-                width: 100%;
-                input,
-                textarea {
-                    font-size: .75rem;
-                }
-            }
-
-            .column .inner_col_1 p {
-                font-size: .75rem;
-            }
-
-        }
-
-    }
-    .product_loop {
-        min-height: auto;
-    }
-}
-
+// tablet responsiveness
 @media (min-width: 768px) and (max-width: 1024px) {
     h1 {
         font-size: 2rem; //main_heading (32px)
@@ -855,6 +834,11 @@ footer .l_content{
     h4 {
         font-size: 0.875rem; //sub_main-heading_3 (14px)
     }
+
+    $section_spacer: 3rem 0rem;
+    $section_spacer_2: 7rem 0rem;
+    $section_spacer_3: 7rem 0rem 5rem 0;
+    $section_spacer_4: 3rem 0rem 5rem 0;
 
     .global_find_store_template {
         padding: $section_spacer_2;
@@ -881,9 +865,124 @@ footer .l_content{
     .global_findModal_contact_form_template {
         padding: 0 2rem;
 
-        .wrapper .column .inner_col_2 form {
-            width: 100%;
+        .wrapper .column {
+            .inner_col_1 p{
+                font-size: 1rem;
+            }
+             .inner_col_2 form {
+                width: 100%;
+            }
+            form input{
+                font-size: 1rem!important;
+            }
+            form textarea{
+                font-size: 1rem!important;
+            }
+        }
+       
+    }
+
+    // archive.html responsive
+    .archive_page .global_find_store_template .wrapper {
+        width: 100% !important;
+        padding-inline: 2rem;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+
+
+// Mobile Responsiveness
+@media screen and (max-width: 480px) {
+    main {
+        margin-top: 6.875rem;
+    }
+
+    .global_btn .btn_wrapper span {
+        font-size: 0.875rem;
+    }
+
+    header .top_row_header span {
+        font-size: 0.5rem !important;
+    }
+
+    h1 {
+        font-size: 1.5rem; //main_heading (24px)
+    }
+
+    h2 {
+        font-size: 1.25rem; //sub_main-heading_1 (20px)
+    }
+
+    h3 {
+        font-size: 1.125rem; //sub_main-heading_2 (18px)
+    }
+
+    h4 {
+        font-size: 1rem; //sub_main-heading_3 (16px)
+    }
+
+    $section_spacer: 2rem 0rem;
+    $section_spacer_2: 5rem 0rem;
+    $section_spacer_3: 5rem 0rem 5rem 0;
+    $section_spacer_4: 3rem 0rem 5rem 0;
+
+    .global_gift_card_template .wrapper .column {
+        gap: 2rem;
+        padding: 0 3rem;
+    }
+
+    .global_find_store_template {
+        padding: 5rem 1rem;
+
+        .container_1760 .wrapper p {
+            font-size: .75rem;
+        }
+    }
+
+    .global_blogs_archive_loop_template .wrapper {
+        padding: 7rem 0rem;
+        gap: 5rem;
+    }
+
+    .global_blogs_archive_loop_template .wrapper .column:nth-of-type(2) {
+        flex-direction: column;
+
+        .post_archive_loop .post_short_meta_desp p {
+            font-size: 1rem;
+        }
+
+        .post_date span {
+            font-size: 1rem;
+        }
+    }
+
+    .global_findModal_contact_form_template {
+        padding: 0 2rem;
+
+        .wrapper {
+            .column .inner_col_2 form {
+                width: 100%;
+
+                input,
+                textarea {
+                    font-size: .75rem;
+                }
+            }
+
+            .column .inner_col_1 p {
+                font-size: .75rem;
+            }
 
         }
+
+    }
+
+    .product_loop {
+        min-height: auto;
     }
 }

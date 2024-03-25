@@ -31,3 +31,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const decreaseBtns = document.querySelectorAll('.decreaseBtn');
+  const increaseBtns = document.querySelectorAll('.increaseBtn');
+  const quantitySpans = document.querySelectorAll('.quantity');
+
+  let quantity = 0;
+
+  decreaseBtns.forEach(decreaseBtn => {
+    decreaseBtn.addEventListener('click', () => {
+      if (quantity > 0) {
+        quantity--;
+        updateQuantity();
+      }
+    });
+  });
+
+  increaseBtns.forEach(increaseBtn => {
+    increaseBtn.addEventListener('click', () => {
+      quantity++;
+      updateQuantity();
+    });
+  });
+
+  function updateQuantity() {
+    quantitySpans.forEach(quantitySpan => {
+      quantitySpan.textContent = quantity;
+    });
+  }
+
+});
+
+
+
+// Global Faq Accordion js----------------
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll(".accordion .tab");
+
+  accordions.forEach(accordion => {
+    const content = accordion.querySelector(".content");
+    accordion.addEventListener("click", () => {
+      content.classList.toggle("open");
+    });
+  });
+});

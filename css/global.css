@@ -472,6 +472,51 @@ h4 {
   display: block;
 }
 
+.global_faq {
+  background-color: #FFFFFF;
+}
+.global_faq .wrapper {
+  padding: 10rem 0rem;
+  gap: 5rem;
+}
+.global_faq .wrapper .column:nth-of-type(1) {
+  align-items: center;
+  text-align: center;
+}
+.global_faq .wrapper .column:nth-of-type(1) h1 {
+  margin-bottom: 2rem;
+}
+.global_faq .wrapper .column:nth-of-type(1) p {
+  font-size: 1.25rem;
+}
+
+.global_faq .column:nth-of-type(2) {
+  max-width: 1386px;
+}
+.global_faq .column:nth-of-type(2) .accordion {
+  gap: 1rem;
+}
+.global_faq .column:nth-of-type(2) .accordion .tab {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.global_faq .column:nth-of-type(2) .accordion .tab .tab_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.global_faq .column:nth-of-type(2) .accordion .tab .content {
+  padding: 1.5rem 0;
+}
+.global_faq .column:nth-of-type(2) .accordion .tab .content p {
+  font-size: 1.25rem;
+  line-height: 2em;
+}
+.global_faq .column:nth-of-type(2) .accordion .tab .content.open {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -500,6 +545,10 @@ header .top_row_header .column {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+header .mobile_header {
+  display: none;
 }
 
 header .main_row_header {
@@ -676,12 +725,64 @@ footer .l_content span {
     padding: 1rem 2rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  .global_find_store_template {
+    padding: 7rem 0rem;
+  }
+  .global_blogs_archive_loop_template .wrapper {
+    padding: 7rem 0rem;
+  }
+  .global_blogs_archive_loop_template .wrapper > .column:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .global_blogs_archive_loop_template .wrapper .post_archive_loop .post_short_meta_desp p {
+    font-size: 1rem;
+  }
+  .global_blogs_archive_loop_template .wrapper .post_archive_loop .post_short_meta_desp .post_date span {
+    font-size: 1rem;
+  }
+  .global_findModal_contact_form_template {
+    padding: 0 2rem;
+  }
+  .global_findModal_contact_form_template .wrapper .column .inner_col_1 p {
+    font-size: 1rem;
+  }
+  .global_findModal_contact_form_template .wrapper .column .inner_col_2 form {
+    width: 100%;
+  }
+  .global_findModal_contact_form_template .wrapper .column form input {
+    font-size: 1rem !important;
+  }
+  .global_findModal_contact_form_template .wrapper .column form textarea {
+    font-size: 1rem !important;
+  }
+  .archive_page .global_find_store_template .wrapper {
+    width: 100% !important;
+    padding-inline: 2rem;
+  }
+  .archive_page .global_find_store_template .wrapper p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   main {
     margin-top: 6.875rem;
   }
   .global_btn .btn_wrapper span {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
   header .top_row_header span {
     font-size: 0.5rem !important;
@@ -736,41 +837,5 @@ footer .l_content span {
   }
   .product_loop {
     min-height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  h4 {
-    font-size: 0.875rem;
-  }
-  .global_find_store_template {
-    padding: 10rem 0rem;
-  }
-  .global_blogs_archive_loop_template .wrapper {
-    padding: 10rem 0rem;
-  }
-  .global_blogs_archive_loop_template .wrapper > .column:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .global_blogs_archive_loop_template .wrapper .post_archive_loop .post_short_meta_desp p {
-    font-size: 1rem;
-  }
-  .global_blogs_archive_loop_template .wrapper .post_archive_loop .post_short_meta_desp .post_date span {
-    font-size: 1rem;
-  }
-  .global_findModal_contact_form_template {
-    padding: 0 2rem;
-  }
-  .global_findModal_contact_form_template .wrapper .column .inner_col_2 form {
-    width: 100%;
   }
 }/*# sourceMappingURL=global.css.map */
