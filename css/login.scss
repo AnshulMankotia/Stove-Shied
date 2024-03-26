@@ -23,3 +23,75 @@ $section_spacer_4: 5rem 0rem 10rem 0;
       background-image: url("/assets/loginsection.png");
     }
 }
+
+
+
+// Tablet Responsiveness
+@media (min-width:768px) and (max-width:1024px) {
+  $section_spacer: 3rem 0rem;
+  $section_spacer_2: 7rem 0rem;
+  $section_spacer_3: 7rem 0rem 5rem 0;
+  $section_spacer_4: 3rem 0rem 5rem 0;
+
+  .login_form .wrapper {
+    flex-direction: column;
+
+    .column:nth-of-type(2) {
+      width: 100%;
+      padding-block: 3rem;
+
+      .inner_wrapper {
+        width: 100%;
+
+        h2,
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+// Mobile Responsiveness
+@media screen and (max-width:480px) {
+  $section_spacer: 2rem 0rem;
+  $section_spacer_2: 5rem 0rem;
+  $section_spacer_3: 5rem 0rem 5rem 0;
+  $section_spacer_4: 3rem 0rem 5rem 0;
+
+  .login_form .wrapper {
+    flex-direction: column;
+
+    .column:nth-of-type(2) {
+      width: 100%;
+      padding-block: 3rem;
+
+      .login_with a {
+        font-size: .875rem;
+      }
+
+      form label {
+        font-size: .875rem;
+      }
+
+      .inner_wrapper {
+        width: 100%;
+
+        h2 {
+          text-align: center;
+        }
+
+        p {
+          font-size: .75rem;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+}

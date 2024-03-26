@@ -1,3 +1,45 @@
 .login_form .column:nth-of-type(1) {
   background-image: url("/assets/loginsection.png");
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login_form .wrapper {
+    flex-direction: column;
+  }
+  .login_form .wrapper .column:nth-of-type(2) {
+    width: 100%;
+    padding-block: 3rem;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper {
+    width: 100%;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper h2,
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .login_form .wrapper {
+    flex-direction: column;
+  }
+  .login_form .wrapper .column:nth-of-type(2) {
+    width: 100%;
+    padding-block: 3rem;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .login_with a {
+    font-size: 0.875rem;
+  }
+  .login_form .wrapper .column:nth-of-type(2) form label {
+    font-size: 0.875rem;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper {
+    width: 100%;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper h2 {
+    text-align: center;
+  }
+  .login_form .wrapper .column:nth-of-type(2) .inner_wrapper p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=login.css.map */
