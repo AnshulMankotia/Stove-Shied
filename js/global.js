@@ -72,8 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   accordions.forEach(accordion => {
     const content = accordion.querySelector(".content");
+    const svgs = accordion.querySelector(".accordion .tab_title svg");
     accordion.addEventListener("click", () => {
       content.classList.toggle("open");
+      svgs.classList.toggle("opensvg");
     });
   });
 });

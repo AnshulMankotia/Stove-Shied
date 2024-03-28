@@ -534,6 +534,7 @@ h4 {
     .wrapper{
         padding: $section_spacer_2;
         gap: 5rem;
+        align-items: center;
         .column:nth-of-type(1){
             align-items: center;
             text-align: center;
@@ -557,21 +558,35 @@ h4 {
             padding: 1.5rem 2rem;
             border: 1px solid $border_clr;
             border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
             .tab_title{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+               svg{
+                   transition: all 0.3s ease-in-out;
+               }
+                svg.opensvg{
+                    transform: rotate(45deg);
+                }
             }
             .content{
-                padding: 1.5rem 0;
+                padding:0;
+                max-height: 0;
+                visibility: hidden;
+                transition: padding 0.3s ease-in-out,max-height 0.3s ease-in-out, visibility 0.23s ease-in-out;
                 p{
                     font-size: 1.25rem;
                     line-height: 2em;
                 }
             }
             .content.open{
-                display: none;
+                max-height: 500px;
+                padding: 1.5rem 0;
+                visibility: visible;
             }
+            
         }
     }
 }
