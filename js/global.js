@@ -99,6 +99,7 @@ overlay.addEventListener("click",()=>{
 
 close_modal.addEventListener("click",()=>{
   mobile_offcanvas.classList.remove("open_offcanvas_modal");
+  removeOverlay();
 });
 
 });
