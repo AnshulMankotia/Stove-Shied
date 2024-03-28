@@ -60,8 +60,9 @@ $section_spacer_4:5rem 0rem 10rem 0;
     }
 }
 .ourstory_section2 .wrapper .column:nth-of-type(2){
-    h1{
+    h2{
         margin-bottom:3rem;
+        font-size: 3rem;
     }
     p{
         margin-bottom: 1rem;
@@ -109,6 +110,10 @@ $section_spacer_4:5rem 0rem 10rem 0;
     .ourstory_section2 .wrapper {
         flex-direction: column-reverse;
 
+        .column:nth-of-type(1){
+            max-width: 100%;
+        }
+
         .column:nth-of-type(2){
         max-width: 100%; 
     
@@ -136,7 +141,7 @@ $section_spacer_4:5rem 0rem 10rem 0;
         padding: $section_spacer;
         gap: 3rem;
         .column:nth-of-type(1) {
-
+           max-width: 100%;
             p,
             span {
                 font-size: .75rem;

@@ -79,3 +79,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+// Mobile Offcanvas modal js-------------------
+document.addEventListener('DOMContentLoaded', () => {
+const open_modal = document.getElementById("hamburger");
+const mobile_offcanvas = document.querySelector(".mobile_offcanvas");
+const close_modal = document.getElementById("offcavas_modal_close");
+
+open_modal.addEventListener("click",()=>{
+  mobile_offcanvas.classList.add("open_offcanvas_modal");
+  addOverlay();
+});
+
+overlay.addEventListener("click",()=>{
+  mobile_offcanvas.classList.remove("open_offcanvas_modal");
+});
+
+close_modal.addEventListener("click",()=>{
+  mobile_offcanvas.classList.remove("open_offcanvas_modal");
+});
+
+});

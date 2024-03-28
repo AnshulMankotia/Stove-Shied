@@ -36,8 +36,9 @@
   max-width: 760px;
 }
 
-.ourstory_section2 .wrapper .column:nth-of-type(2) h1 {
+.ourstory_section2 .wrapper .column:nth-of-type(2) h2 {
   margin-bottom: 3rem;
+  font-size: 3rem;
 }
 .ourstory_section2 .wrapper .column:nth-of-type(2) p {
   margin-bottom: 1rem;
@@ -71,6 +72,9 @@
   .ourstory_section2 .wrapper {
     flex-direction: column-reverse;
   }
+  .ourstory_section2 .wrapper .column:nth-of-type(1) {
+    max-width: 100%;
+  }
   .ourstory_section2 .wrapper .column:nth-of-type(2) {
     max-width: 100%;
   }
@@ -85,6 +89,9 @@
   .ourstory_section1 .wrapper {
     padding: 2rem 0rem;
     gap: 3rem;
+  }
+  .ourstory_section1 .wrapper .column:nth-of-type(1) {
+    max-width: 100%;
   }
   .ourstory_section1 .wrapper .column:nth-of-type(1) p,
   .ourstory_section1 .wrapper .column:nth-of-type(1) span {
