@@ -103,3 +103,21 @@ close_modal.addEventListener("click",()=>{
 });
 
 });
+
+
+
+// F A Q js------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const faq_quick_links = document.querySelectorAll(".flex_column li");
+  faq_quick_links.forEach(faq_quick_link => {
+      faq_quick_link.addEventListener("click", () => {
+          faq_quick_links.forEach(link => {
+              link.classList.remove("faq-link-open");
+          });
+          faq_quick_link.classList.add("faq-link-open");
+      });
+  });
+});
+
+
+

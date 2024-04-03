@@ -604,9 +604,17 @@ h4 {
 
 // global faq css class/js---------------
 .accordion{
+    gap: 1rem;
     .tab{
+        padding: 1.5rem 2rem;
+        border: 1px solid $border_clr;
+        border-radius: 10px;
+        cursor: pointer;
         overflow: hidden;
         .tab_title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
            svg{
                transition: all 0.3s ease-in-out;
            }
@@ -909,7 +917,7 @@ footer .l_content{
     .mobile_footer .accordion{
         gap: 2rem;
         .tab{
-            padding: 1rem 0;
+            padding: 1rem;
             border-bottom: 1px solid #0000004D;
             .tab_title{
                 display: flex;
@@ -1145,5 +1153,27 @@ footer .l_content{
 
     .product_loop {
         min-height: auto;
+    }
+    .global_faq .wrapper .column:nth-of-type(1) p {
+        font-size: 0.75rem;
+    }
+    .accordion .tab .tab_title h3 {
+       font-size: 0.875rem;
+       width: 85%;
+    }
+    .accordion .tab .content p {
+        font-size: 0.75rem;
+    }
+    .accordion .tab .tab_title svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .mobile_footer .accordion .tab .content ul li a{
+        font-size: 0.875rem;
+    }
+    
+    footer .mobile_footer .column:nth-of-type(1) p {
+    font-size: 0.875rem;
     }
 }

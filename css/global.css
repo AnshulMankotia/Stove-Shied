@@ -540,8 +540,20 @@ h4 {
   visibility: visible;
 }
 
+.accordion {
+  gap: 1rem;
+}
 .accordion .tab {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
   overflow: hidden;
+}
+.accordion .tab .tab_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .accordion .tab .tab_title svg {
   transition: all 0.3s ease-in-out;
@@ -810,7 +822,7 @@ footer .l_content span {
     gap: 2rem;
   }
   .mobile_footer .accordion .tab {
-    padding: 1rem 0;
+    padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3019607843);
   }
   .mobile_footer .accordion .tab .tab_title {
@@ -980,5 +992,25 @@ footer .l_content span {
   }
   .product_loop {
     min-height: auto;
+  }
+  .global_faq .wrapper .column:nth-of-type(1) p {
+    font-size: 0.75rem;
+  }
+  .accordion .tab .tab_title h3 {
+    font-size: 0.875rem;
+    width: 85%;
+  }
+  .accordion .tab .content p {
+    font-size: 0.75rem;
+  }
+  .accordion .tab .tab_title svg {
+    width: 15px;
+    height: 15px;
+  }
+  .mobile_footer .accordion .tab .content ul li a {
+    font-size: 0.875rem;
+  }
+  footer .mobile_footer .column:nth-of-type(1) p {
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=global.css.map */
